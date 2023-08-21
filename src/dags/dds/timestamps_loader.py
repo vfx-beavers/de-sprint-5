@@ -42,7 +42,6 @@ class TsDDSRepository:
 
     def insert_ts(self, conn: Connection, tsobj: TsObj) -> None:
 
-        # tsms = datetime.strptime(tsjson["update_ts"], '%Y-%m-%d %H:%M:%S.%f')
         ts = tsobj.order_ts.replace(microsecond=0)
 
         with conn.cursor() as cur:
