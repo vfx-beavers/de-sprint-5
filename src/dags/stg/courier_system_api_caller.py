@@ -12,9 +12,9 @@ class CourierSystem:
         self.log = log
         self.base_url = 'https://d5d04q7d963eapoepsqr.apigw.yandexcloud.net'
         self.headers = {
-                "X-Nickname" : 'cgbeavers2',
+                "X-Nickname" : '******',
                 "X-Cohort" : '15',
-                "X-API-KEY" : '25c27781-8fde-4b30-a22e-524044a7580f'
+                "X-API-KEY" : '******'
         }
 
     def get_couriers_from_api(self, limit, offset) -> List:
